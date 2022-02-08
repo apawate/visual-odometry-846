@@ -16,7 +16,7 @@ import time
 
 
 def Tracking(p0, p1):
-    image = PIL.Image.open("Screen_Shot_2022-02-06_at_8.24.27_PM.png")
+    image = PIL.Image.open("field.png")
     blank_image = np.array(image)
     p1*=500
     p0*=500
