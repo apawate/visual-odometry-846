@@ -5,6 +5,7 @@
 """
 
 import sys
+import pillow
 import ogl_viewer.tracking_viewer as gl
 import pyzed.sl as sl
 import cv2
@@ -14,8 +15,9 @@ import time
 
 
 def Tracking(p0, p1):
+    image = PIL.Image.open("Screen_Shot_2022-02-06_at_8.24.27_PM.png")
+    blank_image = np.array(image)
     blank_image = np.zeros((1200, 1200, 3), np.uint8)
-    blank_image[:] = (255, 255, 255)
     p1*=500
     p0*=500
     p0=round(p0)
