@@ -18,8 +18,8 @@ import time
 def Tracking(p0, p1):
     image = PIL.Image.open("field.png")
     blank_image = np.array(image)
-    p1*=500
-    p0*=500
+    p1*=370
+    p0*=800
     p0=round(p0)
     p1=round(p1)
 
