@@ -15,14 +15,14 @@ import time
 
 
 def Tracking(p0, p1):
-    image = cv2.imread('field.png')
+    image = cv2.imread('map.png')
     blank_image = np.array(image)
     p1 *= 75.07091243
     p0 *= 75.07091243
     p0 = round(p0)
     p1 = round(p1)
 
-    cv2.circle(blank_image, (p0 + 900, p1 + 335), 4, (0, 0, 0), 2)
+    cv2.circle(blank_image, (p0 + 860, p1 + 165), 4, (0, 0, 0), 2)
     plt.imshow(blank_image)
     cv2.namedWindow("Display", cv2.WINDOW_AUTOSIZE)
 
